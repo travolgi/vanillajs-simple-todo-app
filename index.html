@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Travolgi">
+	<title>Simple To Do app with Vanilla js</title>
+	<link rel="icon" href="https://travolgi.it/favicon.ico" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/style.css">
+	<script src="assets/script.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<h1>Simple To Do app with Vanilla js</h1>
+	</header>
+
+	<main id="main">
+		<input
+			type="text"
+			name="todo"
+			id="todo"
+			placeholder="Add new Todo"
+		/>
+
+		<ul id="todoList">
+		</ul>
+
+		<div class="flex">
+			<button id="btnAll" class="active" disabled>Show All</button>
+			<button id="btnCompleted">Completed</button>
+			<button id="btnTodo">To Do</button>
+		</div>
+	</main>
+
+	<footer>
+		<p>Developed by <a href="https://travolgi.it" target="_blank">Travolgi</a> <span id="date"></span>.</p>
+	</footer>
+</body>
+</html>
